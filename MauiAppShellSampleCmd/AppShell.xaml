@@ -12,9 +12,9 @@
         ContentTemplate="{DataTemplate local:WelcomePage}"
         Route="WelcomePage"/>
     <!-- מסך השער: מוגדר מחוץ לתפריט כדי שלא יופיע שם, ועם התנהגות Disabled -->
-    <FlyoutItem Title="ברוכים הבאים" Icon="dotnet_bot.png">
+    <FlyoutItem Title="Welcome" Icon="dotnet_bot.png">
         <ShellContent
-            Title="ברוכים הבאים"
+            Title="Welcome"
             ContentTemplate="{DataTemplate local:WelcomePage}"
             Route="WelcomePage"           
             Shell.FlyoutBehavior="Disabled" />
@@ -27,7 +27,7 @@
     </FlyoutItem>
     <FlyoutItem Title="Contact" Icon="appicon.png">
         <ShellContent
-            Title="Contact"
+            Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
     </FlyoutItem>
