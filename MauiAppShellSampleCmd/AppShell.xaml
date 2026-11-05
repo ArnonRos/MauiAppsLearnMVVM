@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppShellSampleCmd.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Views"
+    Title="MauiAppShellSampleCmd"
+    FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:WelcomePage}"
+        Route="WelcomePage"/>
+    <!-- מסך השער: מוגדר מחוץ לתפריט כדי שלא יופיע שם, ועם התנהגות Disabled -->
+    <FlyoutItem Title="ברוכים הבאים" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="ברוכים הבאים"
+            ContentTemplate="{DataTemplate local:WelcomePage}"
+            Route="WelcomePage"           
+            Shell.FlyoutBehavior="Disabled" />
+    </FlyoutItem>
+    <FlyoutItem Title="About" Icon="appicon.png">
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Contact" Icon="appicon.png">
+        <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+
+</Shell>

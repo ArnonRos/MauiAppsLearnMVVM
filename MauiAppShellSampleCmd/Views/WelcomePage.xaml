@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.WelcomePage"
+             xmlns:vm="clr-namespace:ViewModels"
+             x:DataType="vm:WelcomeViewModel"
+             Title="WelcomePage">
+
+    <Grid Padding="20">
+        <Border StrokeShape="RoundRectangle 12"
+                StrokeThickness="1"
+                Stroke="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray900}}"
+                BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="400"
+                Padding="30">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,4" Radius="10" Opacity="0.1" />
+            </Border.Shadow>
+
+            <VerticalStackLayout Spacing="25" HorizontalOptions="Fill">
+
+                <!-- תמונה של האפליקציה בדף ברוכים הבאים -->
+                <Image Source="welcomeshell.png"
+                       HeightRequest="140"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,10"/>
+
+                <Label Text="דוגמא ל- Shell"
+                       FontSize="26"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Primary}"/>
+
+                <Label Text="נא לבחור באחת האפשרויות מטה:"
+                       FontSize="14"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Gray500}"/>
+
+                <!-- כפתור כניסה למערכת המפעיל את אירוע הלחיצה בקוד ביהיינד -->
+                <!--Clicked="OnHomeClicked"-->
+                <Button Text="דף הבית"
+                        Command="{Binding NavigateToHomeCommand}"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        HeightRequest="48"
+                        Margin="0,10,0,0" />
+
+                <!-- כפתור אודותנו -->
+                <!--Clicked="OnAboutClicked"-->
+                <Button Text="אודותנו"
+                        Command="{Binding NavigateToAboutCommand}"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        HeightRequest="48"
+                        Margin="0,10,0,0" />
+
+
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+
+</ContentPage>
