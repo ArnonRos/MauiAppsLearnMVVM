@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="MauiAppShellSampleCmd/MauiAppShellSampleCmd.csproj" />
+  <Project Path="MauiAppsLearnShellCmd/MauiAppShellSampleCmd.csproj">
+    <Deploy />
+  </Project>
 </Solution>
