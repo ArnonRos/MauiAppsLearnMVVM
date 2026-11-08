@@ -77,6 +77,12 @@
 	  <MauiXaml Update="Views\ContactPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\InternalPageNotInFlyout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SimplePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\WelcomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -84,6 +90,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Images\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\SimplePage.xaml.cs">
+	    <DependentUpon>SimplePage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

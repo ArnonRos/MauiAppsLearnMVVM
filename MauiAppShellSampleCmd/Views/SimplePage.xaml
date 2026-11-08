@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.SimplePage"
+             xmlns:views="clr-namespace:Views"
+             x:DataType="views:SimplePage"
+             Title="SimplePage">
+<!--<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.SimplePage"
+             xmlns:vm="clr-namespace:ViewModels"
+             x:DataType="vm:SimpleViewModel"
+             Title="SimplePage">-->
+    <VerticalStackLayout>
+        <!-- קישור (Binding) למשתנה או מאפיין שקיים בתוך קובץ ה-C# מאחור -->
+        <Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"       
+            Text="{Binding MyCustomProperty}" />
+    </VerticalStackLayout>
+
+</ContentPage>

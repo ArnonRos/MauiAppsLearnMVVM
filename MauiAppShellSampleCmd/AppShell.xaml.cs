@@ -7,8 +7,8 @@ namespace MauiAppShellSampleCmd
         public AppShell()
         {
             InitializeComponent();
-            //Routing.RegisterRoute("MainPage", typeof(MainPage));
-            //Routing.RegisterRoute("AboutPage", typeof(AboutPage));
+            Routing.RegisterRoute("InternalPageNotInFlyout", typeof(InternalPageNotInFlyout));
+            Routing.RegisterRoute("SimplePage", typeof(SimplePage));
         }
     }
 }

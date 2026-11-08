@@ -3,34 +3,38 @@
     x:Class="MauiAppShellSampleCmd.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Views"
+    xmlns:views="clr-namespace:Views"
     Title="MauiAppShellSampleCmd"
     FlyoutBehavior="Flyout">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:WelcomePage}"
-        Route="WelcomePage"/>
-    <!-- מסך השער: מוגדר מחוץ לתפריט כדי שלא יופיע שם, ועם התנהגות Disabled -->
-    <FlyoutItem Title="Welcome" Icon="dotnet_bot.png">
-        <ShellContent
+    <!-- 1. דף ה-Welcome מוגדר ראשון כדי שייפתח בהפעלה, אך מוסתר מהתפריט הצדדי -->
+        <FlyoutItem Title="Welcome" Icon="appicon.png">
+            <ShellContent
             Title="Welcome"
-            ContentTemplate="{DataTemplate local:WelcomePage}"
-            Route="WelcomePage"           
-            Shell.FlyoutBehavior="Disabled" />
-    </FlyoutItem>
-    <FlyoutItem Title="About" Icon="appicon.png">
-        <ShellContent
+            ContentTemplate="{DataTemplate views:WelcomePage}"
+            Route="WelcomePage" />
+        </FlyoutItem>
+
+        <!-- 2. שאר הדפים - מוצגים בתפריט ויופיע בהם כפתור ההמבורגר כראוי -->
+        <FlyoutItem Title="About" Icon="appicon.png">
+            <ShellContent
             Title="About"
-            ContentTemplate="{DataTemplate local:AboutPage}"
+            ContentTemplate="{DataTemplate views:AboutPage}"
             Route="AboutPage" />
-    </FlyoutItem>
-    <FlyoutItem Title="Contact" Icon="appicon.png">
-        <ShellContent
+        </FlyoutItem>
+
+        <FlyoutItem Title="Home" Icon="appicon.png">
+            <ShellContent
             Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate views:MainPage}"
             Route="MainPage" />
-    </FlyoutItem>
+        </FlyoutItem>
 
+        <FlyoutItem Title="Contact" Icon="appicon.png">
+            <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate views:ContactPage}"
+            Route="ContactPage" />
+        </FlyoutItem>
 
-</Shell>
+    </Shell>
+

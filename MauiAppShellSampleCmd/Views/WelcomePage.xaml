@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.WelcomePage"
              xmlns:vm="clr-namespace:ViewModels"
-             x:DataType="vm:WelcomeViewModel"
-             Title="WelcomePage">
+             x:DataType="vm:WelcomeViewModel"             
+             Title="{Binding Title}"                      
+             Shell.FlyoutBehavior="Disabled">
 
     <Grid Padding="20">
         <Border StrokeShape="RoundRectangle 12"
@@ -22,7 +23,7 @@
             <VerticalStackLayout Spacing="25" HorizontalOptions="Fill">
 
                 <!-- תמונה של האפליקציה בדף ברוכים הבאים -->
-                <Image Source="welcomeshell.png"
+                <Image Source="welcome_shell.png"
                        HeightRequest="140"
                        HorizontalOptions="Center"
                        Margin="0,0,0,10"/>
@@ -45,6 +46,7 @@
                         FontAttributes="Bold"
                         CornerRadius="8"
                         HeightRequest="48"
+                        Height="20"
                         Margin="0,10,0,0" />
 
                 <!-- כפתור אודותנו -->
@@ -54,6 +56,29 @@
                         FontAttributes="Bold"
                         CornerRadius="8"
                         HeightRequest="48"
+                        Height="30"
+                        Margin="0,10,0,0" />
+                <!--Command="{Binding NavigateToContactCommand}"-->
+                <Button Text="צור קשר"
+                        Clicked="OnContactClicked"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        HeightRequest="48"
+                        Height="30"
+                        Margin="0,10,0,0" />
+                <Button Text="דף פנימי שלא בהמבורגר"
+                        Clicked="OnInternalClicked"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        HeightRequest="48"
+                        Height="30"
+                        Margin="0,10,0,0" />
+                <Button Text="דף עם מאפיין בקוד אחורי"
+                        Clicked="OnSimplePageClicked"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        HeightRequest="48"
+                        Height="30"
                         Margin="0,10,0,0" />
 
 
