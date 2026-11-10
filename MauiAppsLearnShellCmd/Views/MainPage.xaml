@@ -4,6 +4,7 @@
              x:Class="Views.MainPage"
              xmlns:vm="clr-namespace:ViewModels"
              x:DataType="vm:MainViewModel"
+             Title="{Binding Title}"
              Shell.FlyoutBehavior="Flyout">
 
     <ScrollView>

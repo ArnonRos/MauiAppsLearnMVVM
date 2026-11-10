@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.MainPage"
+             xmlns:views="clr-namespace:Views"
+             xmlns:vm="clr-namespace:ViewModels"
+             x:DataType="vm:MainViewModel"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="30" Spacing="15" VerticalOptions="Center">
+
+        <!-- חובה לתת x:Name כדי שהקוד האחורי יכיר את הרכיב -->
+        <!-- החלפה ב Binding YearOfBirth -->
+        <Entry Text="{Binding YearOfBirth}" 
+               Placeholder="הכנס שנת לידה (למשל: 1995)" 
+               Keyboard="Numeric" />
+
+        <!-- קישור לאירוע לחיצה קלאסי -->
+        <!--Clicked="OnCalculateAgeClicked"-->
+        <Button Text="חשב גיל" 
+                Command="{Binding CalculateAgeCommand}" />
+
+        <!-- חובה לתת x:Name כדי שנוכל להזריק פה טקסט -->
+        <!-- החלפה ב Binding Result -->
+        <Label Text="{Binding Result}" 
+               FontSize="20" 
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

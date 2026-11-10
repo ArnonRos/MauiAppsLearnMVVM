@@ -2,4 +2,7 @@
   <Project Path="MauiAppsLearnShellCmd/MauiAppShellSampleCmd.csproj">
     <Deploy />
   </Project>
+  <Project Path="MVVMBBasic/MVVMBBasic.csproj" Id="8247c70f-2952-4879-a984-9a3d63d9839a">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
