@@ -14,15 +14,16 @@
              Title="SimplePage">-->
     <VerticalStackLayout>
         <!-- קישור (Binding) למשתנה או מאפיין שקיים בתוך קובץ ה-C# מאחור -->
-        <!--<Label 
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"       
-            Text="{Binding MyCustomProperty}" />-->
 
         <Label 
             VerticalOptions="Center" 
             HorizontalOptions="Center"       
             Text="I am a simple label" />
+
+        <!--<Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"       
+            Text="{Binding MyCustomProperty}" />-->
 
         <!--<Label 
             VerticalOptions="Center" 
