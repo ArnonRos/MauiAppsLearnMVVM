@@ -30,6 +30,7 @@
             Text="I am a simple label"
             x:Name="MyLabel"/>-->
 
+        
 
     </VerticalStackLayout>
 
