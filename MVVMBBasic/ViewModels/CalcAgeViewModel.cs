@@ -5,12 +5,12 @@ using System.Windows.Input;
 
 namespace ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public class CalcAgeViewModel : BaseViewModel
     {
         public ICommand CalculateAgeCommand { get; }
-        public MainViewModel()
+        public CalcAgeViewModel()
         {
-            Title = "דף הבית";
+            Title = "דף חישוב גיל";
             CalculateAgeCommand = new Command(CalculateAge);
         }
         private string _yearOfBirth = string.Empty;

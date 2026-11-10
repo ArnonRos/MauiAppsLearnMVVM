@@ -3,15 +3,15 @@ using ViewModels;
 
 namespace Views
 {
-    public partial class MainPage : ContentPage
+    public partial class ClickCounterPage : ContentPage
     {
         int count = 0;
 
-        public MainPage() : this(new MainViewModel())
+        public ClickCounterPage() : this(new ClickCounterViewModel())
         {
 
         }
-        public MainPage(MainViewModel viewModel)
+        public ClickCounterPage(ClickCounterViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = viewModel;

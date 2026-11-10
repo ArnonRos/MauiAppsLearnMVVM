@@ -101,6 +101,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\ClickCounterPage.xaml.cs">
+	    <DependentUpon>ClickCounterPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\SimplePage.xaml.cs">
 	    <DependentUpon>SimplePage.xaml</DependentUpon>
 	  </Compile>

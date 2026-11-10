@@ -6,7 +6,6 @@ namespace Views
     {
         public WelcomePage() : this(new WelcomeViewModel())
         {
-
         }
 
         // קבלת ה-ViewModel ישירות דרך Dependency Injection וחיבור ה-Binding Context
@@ -42,7 +41,7 @@ namespace Views
 
         //private async void OnHomeClicked(object sender, EventArgs e)
         //{
-        //    await Shell.Current.GoToAsync("MainPage");
+        //    await Shell.Current.GoToAsync("ClickCounterPage");
         //}
     }
 }

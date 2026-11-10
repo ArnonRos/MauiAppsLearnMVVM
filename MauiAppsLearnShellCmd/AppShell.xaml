@@ -22,11 +22,11 @@
             Route="AboutPage" />
         </FlyoutItem>
 
-        <FlyoutItem Title="Home" Icon="appicon.png">
+        <FlyoutItem Title="Click Counter" Icon="appicon.png">
             <ShellContent
-            Title="Home"
-            ContentTemplate="{DataTemplate views:MainPage}"
-            Route="MainPage" />
+            Title="Click Counter"
+            ContentTemplate="{DataTemplate views:ClickCounterPage}"
+            Route="ClickCounterPage" />
         </FlyoutItem>
 
         <FlyoutItem Title="Contact" Icon="appicon.png">

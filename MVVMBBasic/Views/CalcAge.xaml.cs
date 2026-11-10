@@ -2,16 +2,16 @@
 
 namespace Views
 {
-    public partial class MainPage : ContentPage
+    public partial class CalcAgePage : ContentPage
     {
 
 
-        public MainPage() : this(new MainViewModel())
+        public CalcAgePage() : this(new CalcAgeViewModel())
         {
         }
 
         // קבלת ה-ViewModel ישירות דרך Dependency Injection וחיבור ה-Binding Context
-        public MainPage(MainViewModel viewModel)
+        public CalcAgePage(CalcAgeViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = viewModel;
