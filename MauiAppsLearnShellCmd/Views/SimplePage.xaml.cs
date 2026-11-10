@@ -4,26 +4,26 @@ using System.Runtime.CompilerServices;
 
 namespace Views;
 
-public partial class SimplePage : ContentPage, INotifyPropertyChanged
-//public partial class SimplePage : ContentPage
+//public partial class SimplePage : ContentPage, INotifyPropertyChanged
+public partial class SimplePage : ContentPage
 {
 
-    // מאפיין לדוגמה שתרצה להציג ב-XAML
-    private string _myCustomProperty = "שלום מהקוד מאחור!";
+    //// מאפיין לדוגמה שתרצה להציג ב-XAML
+    //private string _myCustomProperty = "שלום מהקוד מאחור!";
 
-    public string MyCustomProperty
-    {
-        get => _myCustomProperty;
-        set
-        {
-            if (_myCustomProperty != value)
-            {
-                _myCustomProperty = value;
-                // שולח התראה ל-XAML שהערך השתנה
-                OnPropertyChanged();
-            }
-        }
-    }
+    //public string MyCustomProperty
+    //{
+    //    get => _myCustomProperty;
+    //    set
+    //    {
+    //        if (_myCustomProperty != value)
+    //        {
+    //            _myCustomProperty = value;
+    //            // שולח התראה ל-XAML שהערך השתנה
+    //            OnPropertyChanged();
+    //        }
+    //    }
+    //}
 
     public SimplePage()
     {
